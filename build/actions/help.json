@@ -1,0 +1,95 @@
+{
+    "install": {
+        "aliases": [
+            "require",
+            "i"
+        ],
+
+        "arguments": [
+            "[packages list]"
+        ],
+
+        "description": "Install package into current project",
+        
+        "properties": {
+            "--forced": {
+                "aliases": [
+                    "-f"
+                ],
+
+                "description": "Install packages ignoring compatibility checks"
+            }
+        }
+    },
+
+    "update": {
+        "aliases": [
+            "u"
+        ],
+
+        "description": "Update all current project packages with not specified version"
+    },
+
+    "packages": {
+        "aliases": [
+            "list"
+        ],
+
+        "description": "Show list of installed packages"
+    },
+
+    "show": {
+        "arguments": [
+            "[packages list]"
+        ],
+        
+        "description": "Show basic information about package(s)"
+    },
+
+    "scripts": {
+        "description": "Show defined scripts list"
+    },
+
+    "audit": {
+        "description": "Audit current project packages for any installation errors",
+        
+        "properties": {
+            "--auto": {
+                "aliases": [
+                    "--fix",
+                    "-a"
+                ],
+
+                "description": "Automatically fix all founded errors"
+            }
+        }
+    },
+
+    "remove": {
+        "aliases": [
+            "delete"
+        ],
+
+        "arguments": [
+            "[packages list]"
+        ],
+
+        "description": "Remove packages from current project"
+    },
+
+    "clear": {
+        "description": "Clear current project from required packages"
+    },
+
+    "build": {
+        "description": "Generate [green]qero-packages/autoload.php[reset] file"
+    },
+
+    "help": {
+        "aliases": [
+            "h"
+        ],
+
+        "description": "Show available commands and arguments list"
+    }
+}
