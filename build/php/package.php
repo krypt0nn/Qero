@@ -106,7 +106,8 @@ class Package
             $package = substr ($package, 0, $pos);
         }
 
-        $this->name = $package;
+        $this->name = strpos ($package, '/') === false ?
+            $package .'/'. $package : $package;
 
         return $this;
     }
